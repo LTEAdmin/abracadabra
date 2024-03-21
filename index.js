@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const port = 3000;
+const usuarios=['Juan', 'Jocelyn','Astrid', 'Maria', 'Ignacia', 'Javier','Brian']
 
 app.use(express.static('./assets'));
 
