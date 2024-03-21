@@ -30,6 +30,11 @@ app.get('/abracadabra/conejo/:id', (req, res) => {
     res.send('conejo');
 })
 
+// crear midelware
+app.get('/abracadabra/juego/:usuario', (req, res) => {
+    res.sendFile(  __dirname + 'index.html');
+});
+
 app.listen(port, () => {
     console.log(`Servidor conectado http://localhost:${port}`)
 });
