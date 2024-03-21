@@ -18,6 +18,17 @@ app.get('/abracadabra/usuarios', (req, res) => {
     res.json(usuarios);
 })
 
+// buscar conejo
+app.get('/abracadabra/conejo/:id', (req, res) => {
+    const num=req.params.id
+    const numeroMath = Math.floor(Math.random() * 3) + 1;
+    if (num == numeroMath) {
+        res.sendFile(__dirname + './assets/img/conejo.jpg');
+    } else {
+        res.sendFile(__dirname + './assets/img/voldemort.jpg');
+    }
+    res.send('conejo');
+})
 
 app.listen(port, () => {
     console.log(`Servidor conectado http://localhost:${port}`)
