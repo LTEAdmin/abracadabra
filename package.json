@@ -11,5 +11,8 @@
     "url": "https://github.com-boot/LTEAdmin/abracadabra.git"
   },
   "author": "Alejandra Flano",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
 }
